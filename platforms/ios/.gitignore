@@ -1,0 +1,10 @@
+*.mode1v3
+*.perspectivev3
+*.pbxuser
+.DS_Store
+build/
+
+# Xcode specific files
+xcuserdata/ 
+*.xccheckout
+*.xcuserstate
