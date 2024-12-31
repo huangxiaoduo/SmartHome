@@ -8,3 +8,7 @@ build/
 xcuserdata/ 
 *.xccheckout
 *.xcuserstate
+
+Pods/
+!podfile
+!podfile.lock
