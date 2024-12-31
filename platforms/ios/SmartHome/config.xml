@@ -25,6 +25,10 @@
         <param name="ios-package" value="CDVGestureHandler" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="ToNativeBridge">
+        <param name="ios-package" value="ToNativeBridge" />
+        <param name="onload" value="true" />
+    </feature>
     <name>SmartHome</name>
     <description>Sample Apache Cordova App</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
