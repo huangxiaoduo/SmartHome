@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 @class H5InvokeCommand;
+@class WKWebView;
 
 NS_ASSUME_NONNULL_BEGIN
 
