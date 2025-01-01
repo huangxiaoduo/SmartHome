@@ -7,7 +7,6 @@
 
 #import "H5InvokeCommand.h"
 #import <Cordova/CDVInvokedUrlCommand.h>
-#import <XDCocoaExts.h>
 
 @interface H5InvokeCommand ()
 @property (nonatomic, assign) NSUInteger timeStamp;

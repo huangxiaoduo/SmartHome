@@ -23,4 +23,6 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+    
+    #import <XDCocoaExts.h>
 #endif

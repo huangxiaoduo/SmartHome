@@ -80,6 +80,7 @@
 		40AE47245267B4EDD342958E /* Pods-SmartHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug.xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug.xcconfig"; sourceTree = "<group>"; };
 		501BFA062D253EDB006D1AE3 /* H5InvokeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5InvokeCommand.h; sourceTree = "<group>"; };
 		501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5InvokeCommand.m; sourceTree = "<group>"; };
+		501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5CommandProtocol.h; sourceTree = "<group>"; };
 		5053F5572D23FC1600A3F23A /* ToNativeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToNativeBridge.h; sourceTree = "<group>"; };
 		5053F5582D23FC1600A3F23A /* ToNativeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToNativeBridge.m; sourceTree = "<group>"; };
 		68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +200,7 @@
 		501BFA032D253E83006D1AE3 /* SmartHome_Common */ = {
 			isa = PBXGroup;
 			children = (
+				501BFA092D25429C006D1AE3 /* Protocols */,
 				501BFA052D253EA7006D1AE3 /* Models */,
 			);
 			path = SmartHome_Common;
@@ -211,6 +213,14 @@
 				501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		501BFA092D25429C006D1AE3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		6229B346C822BF7AD14A8735 /* Pods */ = {
