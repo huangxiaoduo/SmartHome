@@ -1,0 +1,24 @@
+PODS:
+  - XDCocoaExts (0.0.3):
+    - XDCocoaExts/StringExts (= 0.0.3)
+  - XDCocoaExts/StringExts (0.0.3)
+
+DEPENDENCIES:
+  - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.3`)
+
+EXTERNAL SOURCES:
+  XDCocoaExts:
+    :git: https://github.com/huangxiaoduo/XDCocoaExts.git
+    :tag: 0.0.3
+
+CHECKOUT OPTIONS:
+  XDCocoaExts:
+    :git: https://github.com/huangxiaoduo/XDCocoaExts.git
+    :tag: 0.0.3
+
+SPEC CHECKSUMS:
+  XDCocoaExts: 9037dc5aa4610ebef8b264c8c2602546347b44f2
+
+PODFILE CHECKSUM: cbddc1e7bcbb8c66e1a0588fe1b5684de97554cf
+
+COCOAPODS: 1.16.2
