@@ -16,6 +16,7 @@
 		4E7CA2B6272ABB0D00177EF9 /* config.xml in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */; };
+		501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */; };
 		5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053F5582D23FC1600A3F23A /* ToNativeBridge.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
@@ -81,6 +82,8 @@
 		501BFA062D253EDB006D1AE3 /* H5InvokeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5InvokeCommand.h; sourceTree = "<group>"; };
 		501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5InvokeCommand.m; sourceTree = "<group>"; };
 		501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5CommandProtocol.h; sourceTree = "<group>"; };
+		501BFA102D2572EF006D1AE3 /* H5CommandProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5CommandProxy.h; sourceTree = "<group>"; };
+		501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5CommandProxy.m; sourceTree = "<group>"; };
 		5053F5572D23FC1600A3F23A /* ToNativeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToNativeBridge.h; sourceTree = "<group>"; };
 		5053F5582D23FC1600A3F23A /* ToNativeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToNativeBridge.m; sourceTree = "<group>"; };
 		68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -211,6 +214,8 @@
 			children = (
 				501BFA062D253EDB006D1AE3 /* H5InvokeCommand.h */,
 				501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */,
+				501BFA102D2572EF006D1AE3 /* H5CommandProxy.h */,
+				501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -386,6 +391,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
