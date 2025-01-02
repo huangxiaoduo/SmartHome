@@ -7,6 +7,11 @@
 
 #import <AFNetworking/AFNetworking.h>
 
+typedef NS_ENUM(NSUInteger, RequestType) {
+    RequestTypeNormal,
+    RequestTypeCUC
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 /**
@@ -29,7 +34,26 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)parseResponseObject:(id)responseObj
                              response:(NSURLResponse *)request;
 
+- (NSString *)urlWith:(NSString *)path;
 
+- (RACSignal *)rac_reqeustMethod:(NSString *)method
+                            path:(NSString *)path
+                      parameters:(id)parameters;
+
+@end
+
+UIKIT_EXTERN NSString* pkgName(void);
+
+@protocol BaseAPIProtocol <NSObject>
+
+@required
+- (NSString *)baseURLString;
+- (RequestType)requestType;
+
+@optional
+- (NSString *)serverPathString;
+- (NSString *)resultCode;
+- (void)dealBadCode:(NSString *)code;
 
 @end
 
