@@ -943,7 +943,7 @@ var iOSExec = function () {
         // an invalid callbackId and passes it even if no callbacks were given.
         callbackId = 'INVALID';
     } else {
-   	    throw new Error('The old format of this exec call has been removed (deprecated since 2.1). Change to: ' + // eslint-disable-line
+           throw new Error('The old format of this exec call has been removed (deprecated since 2.1). Change to: ' + // eslint-disable-line
             'cordova.exec(null, null, \'Service\', \'action\', [ arg1, arg2 ]);');
     }
 
@@ -1888,7 +1888,7 @@ function handlePluginsObject (path, moduleList, finishPluginLoading) {
 function findCordovaPath () {
     var path = null;
     var scripts = document.getElementsByTagName('script');
-    var term = '/cordova.js';
+    var term = '/cordova_ios.js';
     for (var n = scripts.length - 1; n > -1; n--) {
         var src = scripts[n].src.replace(/\?.*$/, ''); // Strip any query param (CB-6007).
         if (src.indexOf(term) === (src.length - term.length)) {

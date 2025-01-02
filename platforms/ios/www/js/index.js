@@ -26,4 +26,13 @@ function onDeviceReady() {
 
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version);
     document.getElementById('deviceready').classList.add('ready');
+    
+    document.getElementById('send').addEventListener('click', sendData);
+}
+
+function sendData() {
+    ToNativeBridge.sendDataToNative({
+        action: "TEST",
+        sn: "1234567788"
+    })
 }
