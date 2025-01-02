@@ -20,6 +20,7 @@
 		5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053F5582D23FC1600A3F23A /* ToNativeBridge.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
+		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
 		F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,8 @@
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CDVLaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* SmartHome-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "SmartHome-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		99127B302D2634D100CBB870 /* CDVViewController+MVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDVViewController+MVVM.h"; sourceTree = "<group>"; };
+		99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CDVViewController+MVVM.m"; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		501BFA032D253E83006D1AE3 /* SmartHome_Common */ = {
 			isa = PBXGroup;
 			children = (
+				99127B2F2D26349D00CBB870 /* Categories */,
 				501BFA092D25429C006D1AE3 /* Protocols */,
 				501BFA052D253EA7006D1AE3 /* Models */,
 			);
@@ -237,6 +241,15 @@
 				10284FBE6764AFB2C76B00F1 /* Pods-SmartHome.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		99127B2F2D26349D00CBB870 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				99127B302D2634D100CBB870 /* CDVViewController+MVVM.h */,
+				99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
@@ -390,6 +403,7 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
+				99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
