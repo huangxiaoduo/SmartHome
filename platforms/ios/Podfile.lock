@@ -1,10 +1,16 @@
 PODS:
+  - ReactiveObjC (3.1.1)
   - XDCocoaExts (0.0.3):
     - XDCocoaExts/StringExts (= 0.0.3)
   - XDCocoaExts/StringExts (0.0.3)
 
 DEPENDENCIES:
+  - ReactiveObjC (= 3.1.1)
   - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.3`)
+
+SPEC REPOS:
+  trunk:
+    - ReactiveObjC
 
 EXTERNAL SOURCES:
   XDCocoaExts:
@@ -17,8 +23,9 @@ CHECKOUT OPTIONS:
     :tag: 0.0.3
 
 SPEC CHECKSUMS:
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   XDCocoaExts: 9037dc5aa4610ebef8b264c8c2602546347b44f2
 
-PODFILE CHECKSUM: cbddc1e7bcbb8c66e1a0588fe1b5684de97554cf
+PODFILE CHECKSUM: 1975b595f409ff177df71e78934685261209e57c
 
 COCOAPODS: 1.16.2
