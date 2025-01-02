@@ -1,15 +1,32 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - ReactiveObjC (3.1.1)
   - XDCocoaExts (0.0.3):
     - XDCocoaExts/StringExts (= 0.0.3)
   - XDCocoaExts/StringExts (0.0.3)
 
 DEPENDENCIES:
+  - AFNetworking (= 4.0.1)
   - ReactiveObjC (= 3.1.1)
   - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.3`)
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - ReactiveObjC
 
 EXTERNAL SOURCES:
@@ -23,9 +40,10 @@ CHECKOUT OPTIONS:
     :tag: 0.0.3
 
 SPEC CHECKSUMS:
+  AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   XDCocoaExts: 9037dc5aa4610ebef8b264c8c2602546347b44f2
 
-PODFILE CHECKSUM: 1975b595f409ff177df71e78934685261209e57c
+PODFILE CHECKSUM: d80ab11e5282e620563804521fda82f46f376d2f
 
 COCOAPODS: 1.16.2
