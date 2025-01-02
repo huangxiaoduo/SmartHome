@@ -6,7 +6,7 @@ target 'SmartHome' do
   use_frameworks!
 
   # Pods for SmartHome
- pod 'XDCocoaExts', :git => 'https://github.com/huangxiaoduo/XDCocoaExts.git', :tag => '0.0.3'
+ pod 'XDCocoaExts', :git => 'https://github.com/huangxiaoduo/XDCocoaExts.git', :tag => '0.0.4'
  pod 'ReactiveObjC', '3.1.1'
  pod 'AFNetworking', '4.0.1'
 

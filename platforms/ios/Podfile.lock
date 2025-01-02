@@ -15,14 +15,16 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - ReactiveObjC (3.1.1)
-  - XDCocoaExts (0.0.3):
-    - XDCocoaExts/StringExts (= 0.0.3)
-  - XDCocoaExts/StringExts (0.0.3)
+  - XDCocoaExts (0.0.4):
+    - XDCocoaExts/DataExts (= 0.0.4)
+    - XDCocoaExts/StringExts (= 0.0.4)
+  - XDCocoaExts/DataExts (0.0.4)
+  - XDCocoaExts/StringExts (0.0.4)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
   - ReactiveObjC (= 3.1.1)
-  - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.3`)
+  - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.4`)
 
 SPEC REPOS:
   trunk:
@@ -32,18 +34,18 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   XDCocoaExts:
     :git: https://github.com/huangxiaoduo/XDCocoaExts.git
-    :tag: 0.0.3
+    :tag: 0.0.4
 
 CHECKOUT OPTIONS:
   XDCocoaExts:
     :git: https://github.com/huangxiaoduo/XDCocoaExts.git
-    :tag: 0.0.3
+    :tag: 0.0.4
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
-  XDCocoaExts: 9037dc5aa4610ebef8b264c8c2602546347b44f2
+  XDCocoaExts: ecf9a9baf706f15ee76f8f725c4e4e2ce31ff656
 
-PODFILE CHECKSUM: d80ab11e5282e620563804521fda82f46f376d2f
+PODFILE CHECKSUM: 269cd65398bba38a3e558a8a910e67306b9c2cbe
 
 COCOAPODS: 1.16.2
