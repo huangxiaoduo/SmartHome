@@ -25,4 +25,5 @@
     #import <UIKit/UIKit.h>
     
     #import <XDCocoaExts.h>
+    #import <ReactiveObjC.h>
 #endif
