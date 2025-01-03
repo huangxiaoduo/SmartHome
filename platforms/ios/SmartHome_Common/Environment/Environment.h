@@ -17,8 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Environment : NSObject
 @property (nonatomic, assign, readonly) EnvironmentType type;
-/// 需要跟plist中的字段保持一致
-@property (nonatomic, copy, readonly) NSString *APP_URL;
+
+/// /saserver服务器地址
+@property (nonatomic, copy, readonly) NSString *APP_URL_SERVER;
 
 + (instancetype)shared;
 - (NSDictionary *)currentConfig;

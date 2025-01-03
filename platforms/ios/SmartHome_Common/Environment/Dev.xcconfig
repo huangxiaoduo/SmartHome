@@ -12,4 +12,6 @@
 
 ENV = Dev
 
-APP_URL = www.facebook.com
+APP_URL = https:/$()/dev-envsplit.mymlsoft.com
+
+APP_URL_SERVER = $(APP_URL)/saserver

@@ -12,4 +12,6 @@
 
 ENV = Test
 
-APP_URL = www.youtube.com
+APP_URL = https:/$()/test-envsplit.mymlsoft.com
+
+APP_URL_SERVER = $(APP_URL)/saserver

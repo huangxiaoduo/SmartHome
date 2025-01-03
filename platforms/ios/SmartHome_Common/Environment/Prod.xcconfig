@@ -12,4 +12,6 @@
 
 ENV = Prod
 
-APP_URL = www.baidu.com
+APP_URL = https:/$()/superapp.mymlsoft.com
+
+APP_URL_SERVER = $(APP_URL)/saserver
