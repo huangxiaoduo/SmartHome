@@ -21,5 +21,12 @@
 // XCode Build settings for "Debug" Build Configuration.
 //
 
-// Server URL
-APP_URL = http:/$()/wwww.baidu.com
+#include "build.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) DEBUG=1
+
+#include "build-extras.xcconfig"
+
+// (CB-11792)
+// @COCOAPODS_SILENCE_WARNINGS@ //
+#include "../pods-debug.xcconfig"
