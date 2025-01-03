@@ -21,13 +21,5 @@
 // XCode Build settings for "Release" Build Configuration.
 //
 
-#include "build.xcconfig"
-
-CODE_SIGN_IDENTITY = iPhone Distribution
-CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution
-
-#include "build-extras.xcconfig"
-
-// (CB-11792)
-// @COCOAPODS_SILENCE_WARNINGS@ //
-#include "../pods-release.xcconfig"
+// Server URL
+APP_URL = http:/$()/wwww.facebook.com
