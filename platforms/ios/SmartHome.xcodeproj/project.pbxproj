@@ -22,6 +22,10 @@
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
 		99127B542D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B532D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m */; };
+		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
+		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
+		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
+		99FCCC4C2D27BC7E00A5E689 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */; };
 		F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +104,10 @@
 		99127B522D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ReactiveCocoa.h"; sourceTree = "<group>"; };
 		99127B532D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ReactiveCocoa.m"; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
+		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		B04E78B328223153C4D34916 /* Pods-SmartHome.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		B922945F13C22BBCD03E931E /* Pods-SmartHome.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release(dev).xcconfig"; sourceTree = "<group>"; };
 		C0A032B391792E88688D9D3B /* Pods-SmartHome.debug(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(prod).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(prod).xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +138,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				EB87FDF41871DAF40020F90C /* config.xml */,
@@ -216,6 +224,7 @@
 		501BFA032D253E83006D1AE3 /* SmartHome_Common */ = {
 			isa = PBXGroup;
 			children = (
+				99FCCC442D27BBDE00A5E689 /* Environment */,
 				99127B4E2D267A0100CBB870 /* Request */,
 				99127B2F2D26349D00CBB870 /* Categories */,
 				501BFA092D25429C006D1AE3 /* Protocols */,
@@ -277,6 +286,17 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		99FCCC442D27BBDE00A5E689 /* Environment */ = {
+			isa = PBXGroup;
+			children = (
+				99FCCC452D27BC2200A5E689 /* Dev.xcconfig */,
+				99FCCC472D27BC3000A5E689 /* Test.xcconfig */,
+				99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */,
+				99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
 		EB87FDF11871DA420020F90C /* Staging */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,7 +352,7 @@
 				en,
 				Base,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -372,8 +392,12 @@
 			files = (
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Assets.xcassets in Resources */,
+				99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */,
+				99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */,
 				90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */,
+				99FCCC4C2D27BC7E00A5E689 /* Common.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +536,7 @@
 		};
 		99FCCC342D27B8F500A5E689 /* Debug(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -593,7 +617,7 @@
 		};
 		99FCCC362D27B90300A5E689 /* Debug(Test) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -674,7 +698,7 @@
 		};
 		99FCCC382D27B90A00A5E689 /* Debug(Prod) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -755,7 +779,7 @@
 		};
 		99FCCC3A2D27B91D00A5E689 /* Release(Dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -832,7 +856,7 @@
 		};
 		99FCCC3C2D27B92400A5E689 /* Release(Test) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -909,7 +933,7 @@
 		};
 		99FCCC3E2D27B92B00A5E689 /* Release(Prod) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			baseConfigurationReference = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;

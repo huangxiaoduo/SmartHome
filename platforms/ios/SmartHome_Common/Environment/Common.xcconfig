@@ -1,0 +1,23 @@
+//
+//  Common.xcconfig
+//  SmartHome
+//
+//  Created by 泽 on 1/3/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/usr/local/lib/include" "$(OBJROOT)/UninstalledProducts/include" "$(OBJROOT)/UninstalledProducts/$(PLATFORM_NAME)/include" "$(BUILT_PRODUCTS_DIR)"
+OTHER_LDFLAGS = -ObjC
+
+// (CB-9721) Set ENABLE_BITCODE to NO in build.xcconfig
+ENABLE_BITCODE = NO
+
+// (CB-9719) Set CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES to YES in build.xcconfig
+CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES
+
+// (CB-10072)
+SWIFT_OBJC_BRIDGING_HEADER = $(PROJECT_DIR)/$(PROJECT_NAME)/Bridging-Header.h
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) WK_WEB_VIEW_ONLY=$(WK_WEB_VIEW_ONLY)
