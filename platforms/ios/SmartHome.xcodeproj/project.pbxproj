@@ -26,6 +26,7 @@
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
 		99FCCC4C2D27BC7E00A5E689 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */; };
+		99FCCC722D27D16500A5E689 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FCCC712D27D16500A5E689 /* Environment.m */; };
 		F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,8 @@
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		99FCCC702D27D16500A5E689 /* Environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		99FCCC712D27D16500A5E689 /* Environment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
 		B04E78B328223153C4D34916 /* Pods-SmartHome.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		B922945F13C22BBCD03E931E /* Pods-SmartHome.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release(dev).xcconfig"; sourceTree = "<group>"; };
 		C0A032B391792E88688D9D3B /* Pods-SmartHome.debug(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(prod).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(prod).xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +296,8 @@
 				99FCCC472D27BC3000A5E689 /* Test.xcconfig */,
 				99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */,
 				99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */,
+				99FCCC702D27D16500A5E689 /* Environment.h */,
+				99FCCC712D27D16500A5E689 /* Environment.m */,
 			);
 			path = Environment;
 			sourceTree = "<group>";
@@ -451,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99127B542D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m in Sources */,
+				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
 				99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */,

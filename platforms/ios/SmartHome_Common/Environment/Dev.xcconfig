@@ -10,4 +10,6 @@
 
 #include "Common.xcconfig"
 
+ENV = Dev
+
 APP_URL = www.facebook.com
