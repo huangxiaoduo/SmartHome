@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,6 @@
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
-		99127B542D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B532D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m */; };
 		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
@@ -102,8 +101,6 @@
 		90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		99127B302D2634D100CBB870 /* CDVViewController+MVVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDVViewController+MVVM.h"; sourceTree = "<group>"; };
 		99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CDVViewController+MVVM.m"; sourceTree = "<group>"; };
-		99127B522D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+ReactiveCocoa.h"; sourceTree = "<group>"; };
-		99127B532D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+ReactiveCocoa.m"; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -228,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				99FCCC442D27BBDE00A5E689 /* Environment */,
-				99127B4E2D267A0100CBB870 /* Request */,
 				99127B2F2D26349D00CBB870 /* Categories */,
 				501BFA092D25429C006D1AE3 /* Protocols */,
 				501BFA052D253EA7006D1AE3 /* Models */,
@@ -276,17 +272,8 @@
 			children = (
 				99127B302D2634D100CBB870 /* CDVViewController+MVVM.h */,
 				99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */,
-				99127B522D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.h */,
-				99127B532D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m */,
 			);
 			path = Categories;
-			sourceTree = "<group>";
-		};
-		99127B4E2D267A0100CBB870 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Request;
 			sourceTree = "<group>";
 		};
 		99FCCC442D27BBDE00A5E689 /* Environment */ = {
@@ -455,7 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99127B542D267A5F00CBB870 /* AFHTTPSessionManager+ReactiveCocoa.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
