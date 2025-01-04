@@ -20,16 +20,20 @@ PODS:
     - XDCocoaExts/StringExts (= 0.0.4)
   - XDCocoaExts/DataExts (0.0.4)
   - XDCocoaExts/StringExts (0.0.4)
+  - YTKNetwork (3.0.6):
+    - AFNetworking/NSURLSession (~> 4.0)
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
   - ReactiveObjC (= 3.1.1)
   - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.4`)
+  - YTKNetwork (= 3.0.6)
 
 SPEC REPOS:
   trunk:
     - AFNetworking
     - ReactiveObjC
+    - YTKNetwork
 
 EXTERNAL SOURCES:
   XDCocoaExts:
@@ -45,7 +49,8 @@ SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   XDCocoaExts: ecf9a9baf706f15ee76f8f725c4e4e2ce31ff656
+  YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
 
-PODFILE CHECKSUM: 269cd65398bba38a3e558a8a910e67306b9c2cbe
+PODFILE CHECKSUM: 0422382811b33e4d0c4a953ecb5a6413b21961c9
 
 COCOAPODS: 1.16.2

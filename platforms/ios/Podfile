@@ -9,5 +9,5 @@ target 'SmartHome' do
  pod 'XDCocoaExts', :git => 'https://github.com/huangxiaoduo/XDCocoaExts.git', :tag => '0.0.4'
  pod 'ReactiveObjC', '3.1.1'
  pod 'AFNetworking', '4.0.1'
-
+ pod 'YTKNetwork', '3.0.6'
 end
