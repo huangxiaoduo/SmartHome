@@ -18,12 +18,21 @@
  */
 
 #import "MainViewController.h"
+#import "DeviceInfoApi.h"
 
 @implementation MainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    DeviceInfoApi *api = [[DeviceInfoApi alloc] initWithDeviceSN:@"D3A8000012DATETC04200719"];
+    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"成功：%@", request.responseJSONObject);
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"失败：%@", request);
+    }];
+    
     [self.launchView setAlpha:1];
 }
 
