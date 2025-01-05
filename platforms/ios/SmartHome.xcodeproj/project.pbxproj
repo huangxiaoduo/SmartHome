@@ -18,6 +18,7 @@
 		501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */; };
 		501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */; };
 		5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053F5582D23FC1600A3F23A /* ToNativeBridge.m */; };
+		50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 50766F072D2982A800B4DBDB /* DeviceInfoApi.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
@@ -94,6 +95,8 @@
 		501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5CommandProxy.m; sourceTree = "<group>"; };
 		5053F5572D23FC1600A3F23A /* ToNativeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToNativeBridge.h; sourceTree = "<group>"; };
 		5053F5582D23FC1600A3F23A /* ToNativeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToNativeBridge.m; sourceTree = "<group>"; };
+		50766F062D2982A800B4DBDB /* DeviceInfoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoApi.h; sourceTree = "<group>"; };
+		50766F072D2982A800B4DBDB /* DeviceInfoApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfoApi.m; sourceTree = "<group>"; };
 		68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CDVLaunchScreen.storyboard; sourceTree = "<group>"; };
 		82718B4EC76D3AE8DB81C8A9 /* Pods-SmartHome.release(test).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release(test).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release(test).xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +227,7 @@
 		501BFA032D253E83006D1AE3 /* SmartHome_Common */ = {
 			isa = PBXGroup;
 			children = (
+				50766F052D29820800B4DBDB /* Request */,
 				99FCCC442D27BBDE00A5E689 /* Environment */,
 				99127B2F2D26349D00CBB870 /* Categories */,
 				501BFA092D25429C006D1AE3 /* Protocols */,
@@ -250,6 +254,15 @@
 				998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		50766F052D29820800B4DBDB /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				50766F062D2982A800B4DBDB /* DeviceInfoApi.h */,
+				50766F072D2982A800B4DBDB /* DeviceInfoApi.m */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		6229B346C822BF7AD14A8735 /* Pods */ = {
@@ -446,6 +459,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
 				99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */,
+				50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,

@@ -19,11 +19,16 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import <YTKNetworkConfig.h>
+#import "Environment.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> *)launchOptions
 {
+    YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
+    config.baseUrl = Environment.shared.APP_URL_SERVER;
+    
     self.viewController = [[MainViewController alloc] init];
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
