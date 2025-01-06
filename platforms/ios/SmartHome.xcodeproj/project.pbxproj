@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		4E7CA2B7272ABB0D00177EF9 /* www in Copy Staging Resources */ = {isa = PBXBuildFile; fileRef = 301BF56E109A69640062928A /* www */; };
 		501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */; };
 		501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */; };
+		5039CAC92D2C14690069D971 /* libipp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5039CAC82D2C14690069D971 /* libipp.a */; };
+		5039CACC2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */; };
 		5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053F5582D23FC1600A3F23A /* ToNativeBridge.m */; };
 		50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 50766F072D2982A800B4DBDB /* DeviceInfoApi.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
@@ -95,6 +97,24 @@
 		501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5CommandProtocol.h; sourceTree = "<group>"; };
 		501BFA102D2572EF006D1AE3 /* H5CommandProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5CommandProxy.h; sourceTree = "<group>"; };
 		501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5CommandProxy.m; sourceTree = "<group>"; };
+		5039CAB82D2C14510069D971 /* CmdCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CmdCommon.h; sourceTree = "<group>"; };
+		5039CAB92D2C14510069D971 /* uECC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uECC.h; sourceTree = "<group>"; };
+		5039CABA2D2C14510069D971 /* ch_home_transplant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ch_home_transplant.h; sourceTree = "<group>"; };
+		5039CABB2D2C14510069D971 /* IppSmokeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IppSmokeDelegate.h; sourceTree = "<group>"; };
+		5039CABC2D2C14510069D971 /* ipp_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipp_crypt.h; sourceTree = "<group>"; };
+		5039CABD2D2C14510069D971 /* IppACDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IppACDelegate.h; sourceTree = "<group>"; };
+		5039CABE2D2C14510069D971 /* ippstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ippstruct.h; sourceTree = "<group>"; };
+		5039CABF2D2C14510069D971 /* ipphocofun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipphocofun.h; sourceTree = "<group>"; };
+		5039CAC02D2C14510069D971 /* ippacfun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ippacfun.h; sourceTree = "<group>"; };
+		5039CAC12D2C14510069D971 /* ippfunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ippfunction.h; sourceTree = "<group>"; };
+		5039CAC22D2C14510069D971 /* tools_link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tools_link.h; sourceTree = "<group>"; };
+		5039CAC32D2C14510069D971 /* IppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IppDelegate.h; sourceTree = "<group>"; };
+		5039CAC42D2C14510069D971 /* ippibfun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ippibfun.h; sourceTree = "<group>"; };
+		5039CAC52D2C14510069D971 /* ipp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ipp.h; sourceTree = "<group>"; };
+		5039CAC62D2C14510069D971 /* TEA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEA.h; sourceTree = "<group>"; };
+		5039CAC82D2C14690069D971 /* libipp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipp.a; sourceTree = "<group>"; };
+		5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureSoftAP.h; sourceTree = "<group>"; };
+		5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
 		5053F5572D23FC1600A3F23A /* ToNativeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToNativeBridge.h; sourceTree = "<group>"; };
 		5053F5582D23FC1600A3F23A /* ToNativeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToNativeBridge.m; sourceTree = "<group>"; };
 		50766F062D2982A800B4DBDB /* DeviceInfoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoApi.h; sourceTree = "<group>"; };
@@ -132,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				5039CAC92D2C14690069D971 /* libipp.a in Frameworks */,
 				F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +217,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5039CAC82D2C14690069D971 /* libipp.a */,
+				5039CAB72D2C14510069D971 /* include */,
 				68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */,
 			);
 			name = Frameworks;
@@ -263,6 +286,28 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5039CAB72D2C14510069D971 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5039CAB82D2C14510069D971 /* CmdCommon.h */,
+				5039CAB92D2C14510069D971 /* uECC.h */,
+				5039CABA2D2C14510069D971 /* ch_home_transplant.h */,
+				5039CABB2D2C14510069D971 /* IppSmokeDelegate.h */,
+				5039CABC2D2C14510069D971 /* ipp_crypt.h */,
+				5039CABD2D2C14510069D971 /* IppACDelegate.h */,
+				5039CABE2D2C14510069D971 /* ippstruct.h */,
+				5039CABF2D2C14510069D971 /* ipphocofun.h */,
+				5039CAC02D2C14510069D971 /* ippacfun.h */,
+				5039CAC12D2C14510069D971 /* ippfunction.h */,
+				5039CAC22D2C14510069D971 /* tools_link.h */,
+				5039CAC32D2C14510069D971 /* IppDelegate.h */,
+				5039CAC42D2C14510069D971 /* ippibfun.h */,
+				5039CAC52D2C14510069D971 /* ipp.h */,
+				5039CAC62D2C14510069D971 /* TEA.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		50766F052D29820800B4DBDB /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +348,8 @@
 			children = (
 				996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */,
 				996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */,
+				5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */,
+				5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */,
 			);
 			path = WifiConfigure;
 			sourceTree = "<group>";
@@ -473,6 +520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5039CACC2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
@@ -519,6 +567,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -549,6 +601,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -630,6 +686,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -711,6 +771,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -792,6 +856,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -869,6 +937,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -946,6 +1018,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1023,6 +1099,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
