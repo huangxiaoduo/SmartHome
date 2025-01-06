@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,8 @@
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
 		996BF6702D2BDB2F002D8950 /* DeviceWifiConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */; };
+		996BF6742D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6732D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.m */; };
+		996BF6862D2BDC42002D8950 /* libipp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 996BF6852D2BDC42002D8950 /* libipp.a */; };
 		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
@@ -108,6 +110,9 @@
 		99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CDVViewController+MVVM.m"; sourceTree = "<group>"; };
 		996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigure.h; sourceTree = "<group>"; };
 		996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigure.m; sourceTree = "<group>"; };
+		996BF6722D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureSoftAP.h; sourceTree = "<group>"; };
+		996BF6732D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
+		996BF6852D2BDC42002D8950 /* libipp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipp.a; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -126,12 +131,17 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = SmartHome/config.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		996BF6842D2BDC20002D8950 /* include */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = include; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				996BF6862D2BDC42002D8950 /* libipp.a in Frameworks */,
 				F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +206,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				996BF6852D2BDC42002D8950 /* libipp.a */,
+				996BF6842D2BDC20002D8950 /* include */,
 				68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */,
 			);
 			name = Frameworks;
@@ -301,10 +313,20 @@
 		996BF66D2D2BDAD9002D8950 /* WifiConfigure */ = {
 			isa = PBXGroup;
 			children = (
+				996BF6712D2BDBBC002D8950 /* WifiConfigureSoftAP */,
 				996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */,
 				996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */,
 			);
 			path = WifiConfigure;
+			sourceTree = "<group>";
+		};
+		996BF6712D2BDBBC002D8950 /* WifiConfigureSoftAP */ = {
+			isa = PBXGroup;
+			children = (
+				996BF6722D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.h */,
+				996BF6732D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.m */,
+			);
+			path = WifiConfigureSoftAP;
 			sourceTree = "<group>";
 		};
 		99FCCC442D27BBDE00A5E689 /* Environment */ = {
@@ -347,6 +369,9 @@
 			);
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				996BF6842D2BDC20002D8950 /* include */,
 			);
 			name = SmartHome;
 			productName = SmartHome;
@@ -473,6 +498,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996BF6742D2BDBDD002D8950 /* DeviceWifiConfigureSoftAP.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
@@ -519,6 +545,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -549,6 +579,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -630,6 +664,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -711,6 +749,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -792,6 +834,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -869,6 +915,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -946,6 +996,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -1023,6 +1077,10 @@
 				INFOPLIST_FILE = "SmartHome/SmartHome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.changhong.smarthome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
