@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -111,6 +111,7 @@
 		99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		99FCCC702D27D16500A5E689 /* Environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		99FCCC712D27D16500A5E689 /* Environment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
+		99FCCC822D2B825A00A5E689 /* DeviceWifiConfigureProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureProtocol.h; sourceTree = "<group>"; };
 		B04E78B328223153C4D34916 /* Pods-SmartHome.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(dev).xcconfig"; sourceTree = "<group>"; };
 		B922945F13C22BBCD03E931E /* Pods-SmartHome.release(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.release(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.release(dev).xcconfig"; sourceTree = "<group>"; };
 		C0A032B391792E88688D9D3B /* Pods-SmartHome.debug(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(prod).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(prod).xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +253,7 @@
 			children = (
 				501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */,
 				998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */,
+				99FCCC822D2B825A00A5E689 /* DeviceWifiConfigureProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
