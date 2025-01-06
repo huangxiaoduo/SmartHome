@@ -32,7 +32,4 @@
     };
 }
 
-- (YTKRequestSerializerType)requestSerializerType{
-    return YTKRequestSerializerTypeJSON;
-}
 @end

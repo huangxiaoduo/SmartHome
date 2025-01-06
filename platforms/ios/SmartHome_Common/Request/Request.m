@@ -25,4 +25,14 @@
     };
 }
 
+/// 设置请求序列化类型
+- (YTKRequestSerializerType)requestSerializerType{
+    return YTKRequestSerializerTypeJSON;
+}
+
+/// 设置响应序列号类型
+-(YTKResponseSerializerType)responseSerializerType {
+    return YTKResponseSerializerTypeJSON;
+}
+
 @end
