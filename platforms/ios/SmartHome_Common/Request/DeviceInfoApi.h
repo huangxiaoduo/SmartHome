@@ -5,11 +5,11 @@
 //  Created by HuangZe on 2025/1/4.
 //
 
-#import "YTKRequest.h"
+#import "Request.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DeviceInfoApi : YTKRequest
+@interface DeviceInfoApi : Request
 
 - (instancetype)initWithDeviceSN:(NSString *)sn;
 
