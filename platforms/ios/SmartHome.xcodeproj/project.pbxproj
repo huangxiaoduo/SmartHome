@@ -27,8 +27,6 @@
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
 		99FCCC4C2D27BC7E00A5E689 /* Common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */; };
 		99FCCC722D27D16500A5E689 /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FCCC712D27D16500A5E689 /* Environment.m */; };
-		99FCCC862D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FCCC852D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.m */; };
-		99FCCC892D2BA06000A5E689 /* DeviceWifiConfigureAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FCCC882D2BA06000A5E689 /* DeviceWifiConfigureAdapter.m */; };
 		99FCCC8C2D2BAE2100A5E689 /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FCCC8B2D2BAE2100A5E689 /* Request.m */; };
 		F18EA826A4A68B11E4E42FC5 /* Pods_SmartHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E1D3AC1003BE46CA936CD1 /* Pods_SmartHome.framework */; };
 /* End PBXBuildFile section */
@@ -114,11 +112,6 @@
 		99FCCC4B2D27BC7E00A5E689 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		99FCCC702D27D16500A5E689 /* Environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
 		99FCCC712D27D16500A5E689 /* Environment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
-		99FCCC822D2B825A00A5E689 /* DeviceWifiConfigureProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureProtocol.h; sourceTree = "<group>"; };
-		99FCCC842D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureSoftAP.h; sourceTree = "<group>"; };
-		99FCCC852D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
-		99FCCC872D2BA06000A5E689 /* DeviceWifiConfigureAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureAdapter.h; sourceTree = "<group>"; };
-		99FCCC882D2BA06000A5E689 /* DeviceWifiConfigureAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureAdapter.m; sourceTree = "<group>"; };
 		99FCCC8A2D2BAE2100A5E689 /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		99FCCC8B2D2BAE2100A5E689 /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 		B04E78B328223153C4D34916 /* Pods-SmartHome.debug(dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHome.debug(dev).xcconfig"; path = "Target Support Files/Pods-SmartHome/Pods-SmartHome.debug(dev).xcconfig"; sourceTree = "<group>"; };
@@ -263,7 +256,6 @@
 			children = (
 				501BFA0E2D254B50006D1AE3 /* H5CommandProtocol.h */,
 				998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */,
-				99FCCC822D2B825A00A5E689 /* DeviceWifiConfigureProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -319,10 +311,6 @@
 		99FCCC832D2B85C500A5E689 /* WifiConfigure */ = {
 			isa = PBXGroup;
 			children = (
-				99FCCC842D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.h */,
-				99FCCC852D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.m */,
-				99FCCC872D2BA06000A5E689 /* DeviceWifiConfigureAdapter.h */,
-				99FCCC882D2BA06000A5E689 /* DeviceWifiConfigureAdapter.m */,
 			);
 			path = WifiConfigure;
 			sourceTree = "<group>";
@@ -480,7 +468,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99FCCC862D2B87AC00A5E689 /* DeviceWifiConfigureSoftAP.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
@@ -488,7 +475,6 @@
 				99FCCC8C2D2BAE2100A5E689 /* Request.m in Sources */,
 				50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
-				99FCCC892D2BA06000A5E689 /* DeviceWifiConfigureAdapter.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */,
