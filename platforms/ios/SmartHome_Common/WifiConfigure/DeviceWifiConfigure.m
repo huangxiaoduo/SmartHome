@@ -95,6 +95,19 @@
     return wifiName;
 }
 
+#pragma mark - Setter & Getter
+- (void)setCurrentStep:(WifiConfigureStep)currentStep {
+    _currentStep = currentStep;
+    
+    if (currentStep == WifiConfigureStepOnlineSuccess) {
+        // 设备上线成功，停止定时器查询，调用绑定接口
+        NSLog(@"设备上线了!!!");
+    }
+    
+    if (currentStep == WifiConfigureStepRouterPasswordSent) {
+        [self startQueryOnlineTimer];
+    }
+}
 
 #pragma mark - Property
 
