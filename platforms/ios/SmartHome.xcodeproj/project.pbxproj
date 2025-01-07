@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		90B630EF2AECBBD0009EF368 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 90B630EE2AECBBD0009EF368 /* PrivacyInfo.xcprivacy */; };
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
 		996BF6702D2BDB2F002D8950 /* DeviceWifiConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */; };
+		996BF6A12D2CFA09002D8950 /* DeviceOnlineApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */; };
 		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
@@ -128,6 +129,8 @@
 		99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CDVViewController+MVVM.m"; sourceTree = "<group>"; };
 		996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigure.h; sourceTree = "<group>"; };
 		996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigure.m; sourceTree = "<group>"; };
+		996BF69F2D2CFA09002D8950 /* DeviceOnlineApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceOnlineApi.h; sourceTree = "<group>"; };
+		996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceOnlineApi.m; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 				50766F072D2982A800B4DBDB /* DeviceInfoApi.m */,
 				99FCCC8A2D2BAE2100A5E689 /* Request.h */,
 				99FCCC8B2D2BAE2100A5E689 /* Request.m */,
+				996BF69F2D2CFA09002D8950 /* DeviceOnlineApi.h */,
+				996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -346,12 +351,20 @@
 		996BF66D2D2BDAD9002D8950 /* WifiConfigure */ = {
 			isa = PBXGroup;
 			children = (
+				996BF69E2D2CF1E7002D8950 /* SoftAP */,
 				996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */,
 				996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */,
+			);
+			path = WifiConfigure;
+			sourceTree = "<group>";
+		};
+		996BF69E2D2CF1E7002D8950 /* SoftAP */ = {
+			isa = PBXGroup;
+			children = (
 				5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */,
 				5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */,
 			);
-			path = WifiConfigure;
+			path = SoftAP;
 			sourceTree = "<group>";
 		};
 		99FCCC442D27BBDE00A5E689 /* Environment */ = {
@@ -524,6 +537,7 @@
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
+				996BF6A12D2CFA09002D8950 /* DeviceOnlineApi.m in Sources */,
 				996BF6702D2BDB2F002D8950 /* DeviceWifiConfigure.m in Sources */,
 				99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */,
 				99FCCC8C2D2BAE2100A5E689 /* Request.m in Sources */,

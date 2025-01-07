@@ -20,8 +20,7 @@
     
     return @{
         @"code": NSString.class,
-        @"data": NSObject.class,
-        @"message": NSString.class
+        @"data": NSObject.class
     };
 }
 
