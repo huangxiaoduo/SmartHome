@@ -26,4 +26,6 @@
     
     #import <XDCocoaExts.h>
     #import <ReactiveObjC.h>
+
+    #define equal( code , status ) [ code isEqualToString: (NSString *) status ]
 #endif
