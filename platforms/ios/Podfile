@@ -10,4 +10,8 @@ target 'SmartHome' do
  pod 'ReactiveObjC', '3.1.1'
  pod 'AFNetworking', '4.0.1'
  pod 'YTKNetwork', '3.0.6'
+ pod 'CocoaAsyncSocket', '7.6.5'
+
+
+
 end

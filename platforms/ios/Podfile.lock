@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - CocoaAsyncSocket (7.6.5)
   - ReactiveObjC (3.1.1)
   - XDCocoaExts (0.0.4):
     - XDCocoaExts/DataExts (= 0.0.4)
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (= 4.0.1)
+  - CocoaAsyncSocket (= 7.6.5)
   - ReactiveObjC (= 3.1.1)
   - XDCocoaExts (from `https://github.com/huangxiaoduo/XDCocoaExts.git`, tag `0.0.4`)
   - YTKNetwork (= 3.0.6)
@@ -32,6 +34,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - CocoaAsyncSocket
     - ReactiveObjC
     - YTKNetwork
 
@@ -47,10 +50,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   AFNetworking: 3bd23d814e976cd148d7d44c3ab78017b744cd58
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   XDCocoaExts: ecf9a9baf706f15ee76f8f725c4e4e2ce31ff656
   YTKNetwork: c16be90b06be003de9e9cd0d3b187cc8eaf35c04
 
-PODFILE CHECKSUM: 0422382811b33e4d0c4a953ecb5a6413b21961c9
+PODFILE CHECKSUM: e18f1a4e256f6cf3682ca5e845cdccfc54dd9f02
 
 COCOAPODS: 1.16.2
