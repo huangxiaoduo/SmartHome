@@ -18,7 +18,6 @@
 		501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA072D253EDB006D1AE3 /* H5InvokeCommand.m */; };
 		501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 501BFA112D2572EF006D1AE3 /* H5CommandProxy.m */; };
 		5039CAC92D2C14690069D971 /* libipp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5039CAC82D2C14690069D971 /* libipp.a */; };
-		5039CACC2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */; };
 		5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 5053F5582D23FC1600A3F23A /* ToNativeBridge.m */; };
 		50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 50766F072D2982A800B4DBDB /* DeviceInfoApi.m */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
@@ -26,6 +25,7 @@
 		99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 99127B312D2634D100CBB870 /* CDVViewController+MVVM.m */; };
 		996BF6702D2BDB2F002D8950 /* DeviceWifiConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */; };
 		996BF6A12D2CFA09002D8950 /* DeviceOnlineApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */; };
+		996BF6BD2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */; };
 		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
@@ -115,7 +115,6 @@
 		5039CAC62D2C14510069D971 /* TEA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TEA.h; sourceTree = "<group>"; };
 		5039CAC82D2C14690069D971 /* libipp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libipp.a; sourceTree = "<group>"; };
 		5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureSoftAP.h; sourceTree = "<group>"; };
-		5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
 		5053F5572D23FC1600A3F23A /* ToNativeBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToNativeBridge.h; sourceTree = "<group>"; };
 		5053F5582D23FC1600A3F23A /* ToNativeBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToNativeBridge.m; sourceTree = "<group>"; };
 		50766F062D2982A800B4DBDB /* DeviceInfoApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfoApi.h; sourceTree = "<group>"; };
@@ -131,6 +130,7 @@
 		996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigure.m; sourceTree = "<group>"; };
 		996BF69F2D2CFA09002D8950 /* DeviceOnlineApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceOnlineApi.h; sourceTree = "<group>"; };
 		996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceOnlineApi.m; sourceTree = "<group>"; };
+		996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -361,8 +361,8 @@
 		996BF69E2D2CF1E7002D8950 /* SoftAP */ = {
 			isa = PBXGroup;
 			children = (
+				996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */,
 				5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */,
-				5039CACB2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m */,
 			);
 			path = SoftAP;
 			sourceTree = "<group>";
@@ -533,7 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5039CACC2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
@@ -545,6 +544,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				996BF6BD2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m in Sources */,
 				501BFA122D2572EF006D1AE3 /* H5CommandProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
