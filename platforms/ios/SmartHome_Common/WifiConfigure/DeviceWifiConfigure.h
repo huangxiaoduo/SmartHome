@@ -14,7 +14,11 @@ typedef NS_ENUM(NSUInteger, WifiConfigureStep) {
     WifiConfigureStepStarted,               // 调用startConfigure
     
     WifiConfigureStepAppIsLookingForDevice, // 第一代AP配网，didDeviceAdd:(PIPPDevice)dev还未上报deviceMID.
-    WifiConfigureStepRouterPasswordSent,    // 第一代AP配网，路由器信息已发送，调用了ipp的setWifiSSIDAndPassword.
+    
+    // 第一代AP配网，路由器信息已发送，调用了ipp的setWifiSSIDAndPassword.
+    // 第一代KL配网，开始配网后第20秒当作已发送
+    WifiConfigureStepRouterPasswordSent,
+    
     WifiConfigureStepShouldGotoSettingApp,  // 第一代AP配网，还未连接设备热点发送路由信息
     WifiConfigureStepWaitingOnLineNotice,
     
@@ -24,6 +28,17 @@ typedef NS_ENUM(NSUInteger, WifiConfigureStep) {
     WifiConfigureStepBindFailure,           // 设备绑定失败
     
     WifiConfigureStepEnded                  // 配网结束
+};
+
+typedef NS_ENUM(NSInteger, KLType) {
+    KLType1 = 0,//
+    KLType2,//冰箱，食材盒子，蛋盒
+    KLType3,//空调
+    KLType4,//红外盒子
+    KLType5,//智能插座
+    KLType6,//空气净化器
+    KLType7,//燃热快连
+    KLType8//智能杀菌器
 };
 
 
@@ -55,7 +70,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  IMPORTANT: routerPassword can be \@"", it means no password for router;
  *    if routerPassword is nil, it means user has not configure router info yet
  */
-@property (nonatomic, copy) NSString *routerPassword;
+@property (nonatomic, copy, nullable) NSString *routerPassword;
 
 /// 代理对象
 @property (nonatomic, weak) id<DeviceWifiConfigureConsumerDelegate> delegate;
@@ -65,6 +80,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 是否正在配网
 @property (nonatomic, assign) BOOL isDoingJoinNet;
+
+/// 快连类型
+@property (nonatomic) KLType klType;
 
 /// 开始配网
 - (void)startConfigure;
