@@ -26,6 +26,9 @@
 		996BF6702D2BDB2F002D8950 /* DeviceWifiConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */; };
 		996BF6A12D2CFA09002D8950 /* DeviceOnlineApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */; };
 		996BF6BD2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */; };
+		996BF6C32D2D0D8D002D8950 /* DirectLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6C22D2D0D8D002D8950 /* DirectLink.m */; };
+		996BF6C42D2D0D8D002D8950 /* DirectData.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6C02D2D0D8D002D8950 /* DirectData.m */; };
+		996BF6C92D2D0F8B002D8950 /* DeviceWifiConfigureKL.m in Sources */ = {isa = PBXBuildFile; fileRef = 996BF6C82D2D0F8B002D8950 /* DeviceWifiConfigureKL.m */; };
 		99FCCC462D27BC2200A5E689 /* Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC452D27BC2200A5E689 /* Dev.xcconfig */; };
 		99FCCC482D27BC3000A5E689 /* Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC472D27BC3000A5E689 /* Test.xcconfig */; };
 		99FCCC4A2D27BC3B00A5E689 /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 99FCCC492D27BC3B00A5E689 /* Prod.xcconfig */; };
@@ -131,6 +134,12 @@
 		996BF69F2D2CFA09002D8950 /* DeviceOnlineApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceOnlineApi.h; sourceTree = "<group>"; };
 		996BF6A02D2CFA09002D8950 /* DeviceOnlineApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceOnlineApi.m; sourceTree = "<group>"; };
 		996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureSoftAP.m; sourceTree = "<group>"; };
+		996BF6BF2D2D0D8D002D8950 /* DirectData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectData.h; sourceTree = "<group>"; };
+		996BF6C02D2D0D8D002D8950 /* DirectData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectData.m; sourceTree = "<group>"; };
+		996BF6C12D2D0D8D002D8950 /* DirectLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DirectLink.h; sourceTree = "<group>"; };
+		996BF6C22D2D0D8D002D8950 /* DirectLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DirectLink.m; sourceTree = "<group>"; };
+		996BF6C72D2D0F8B002D8950 /* DeviceWifiConfigureKL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceWifiConfigureKL.h; sourceTree = "<group>"; };
+		996BF6C82D2D0F8B002D8950 /* DeviceWifiConfigureKL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceWifiConfigureKL.m; sourceTree = "<group>"; };
 		998DDCA42D2632B300E5FA1C /* H5ViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = H5ViewModelProtocol.h; sourceTree = "<group>"; };
 		99FCCC452D27BC2200A5E689 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		99FCCC472D27BC3000A5E689 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
@@ -351,6 +360,7 @@
 		996BF66D2D2BDAD9002D8950 /* WifiConfigure */ = {
 			isa = PBXGroup;
 			children = (
+				996BF6BE2D2D0CEB002D8950 /* KL */,
 				996BF69E2D2CF1E7002D8950 /* SoftAP */,
 				996BF66E2D2BDB2F002D8950 /* DeviceWifiConfigure.h */,
 				996BF66F2D2BDB2F002D8950 /* DeviceWifiConfigure.m */,
@@ -361,10 +371,23 @@
 		996BF69E2D2CF1E7002D8950 /* SoftAP */ = {
 			isa = PBXGroup;
 			children = (
-				996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */,
 				5039CACA2D2C14B60069D971 /* DeviceWifiConfigureSoftAP.h */,
+				996BF6BC2D2D01AC002D8950 /* DeviceWifiConfigureSoftAP.m */,
 			);
 			path = SoftAP;
+			sourceTree = "<group>";
+		};
+		996BF6BE2D2D0CEB002D8950 /* KL */ = {
+			isa = PBXGroup;
+			children = (
+				996BF6BF2D2D0D8D002D8950 /* DirectData.h */,
+				996BF6C02D2D0D8D002D8950 /* DirectData.m */,
+				996BF6C12D2D0D8D002D8950 /* DirectLink.h */,
+				996BF6C22D2D0D8D002D8950 /* DirectLink.m */,
+				996BF6C72D2D0F8B002D8950 /* DeviceWifiConfigureKL.h */,
+				996BF6C82D2D0F8B002D8950 /* DeviceWifiConfigureKL.m */,
+			);
+			path = KL;
 			sourceTree = "<group>";
 		};
 		99FCCC442D27BBDE00A5E689 /* Environment */ = {
@@ -533,6 +556,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				996BF6C32D2D0D8D002D8950 /* DirectLink.m in Sources */,
+				996BF6C42D2D0D8D002D8950 /* DirectData.m in Sources */,
 				99FCCC722D27D16500A5E689 /* Environment.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				501BFA082D253EDB006D1AE3 /* H5InvokeCommand.m in Sources */,
@@ -541,6 +566,7 @@
 				99127B322D2634D100CBB870 /* CDVViewController+MVVM.m in Sources */,
 				99FCCC8C2D2BAE2100A5E689 /* Request.m in Sources */,
 				50766F082D2982A800B4DBDB /* DeviceInfoApi.m in Sources */,
+				996BF6C92D2D0F8B002D8950 /* DeviceWifiConfigureKL.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				5053F5592D23FC1600A3F23A /* ToNativeBridge.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
