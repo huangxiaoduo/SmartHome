@@ -56,6 +56,25 @@
     }
 }
 
+#pragma mark - Methods
+- (void)queryDeviceOnline {
+    DeviceOnlineApi *api = [[DeviceOnlineApi alloc] initWithDeviceSN:@"D3A8000012DATETC04200719"];
+    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%s === %@", __FUNCTION__, request.responseObject);
+        NSDictionary *data = request.responseJSONObject[@"data"];
+        NSString *isActive = data[@"isActive"];
+        NSString *onlineStatus = data[@"onlineStatus"];
+        if ([isActive isEqualToString:@"1"] && [onlineStatus isEqualToString:@"1"]) {
+            self.currentStep = WifiConfigureStepOnlineSuccess;
+            
+            // 停止查询
+            [self stopQueryOnlineTimer];
+            
+            //todo：绑定
+        }
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%s === %@", __FUNCTION__, request.error);
+    }];
 }
 
 + (NSString *)currentSSID {
