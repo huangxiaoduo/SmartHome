@@ -28,11 +28,7 @@
 }
 
 - (void)stopConfigure {
-    self.currentStep = WifiConfigureStepEnded;
     self.isDoingJoinNet = NO;
-    if ([self.delegate conformsToProtocol:@protocol(DeviceWifiConfigureConsumerDelegate)]) {
-        [self.delegate wifiConfigure:self continueToStep:self.currentStep];
-    }
     
     [self stopQueryOnlineTimer];
 }
