@@ -19,16 +19,23 @@
 @implementation DeviceWifiConfigure
 
 - (void)startConfigure {
+    self.currentStep = WifiConfigureStepStarted;
+    self.isDoingJoinNet = YES;
     
-    // 默认实现抛出异常
-    [NSException raise:NSInternalInconsistencyException
-                format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+    if ([self.delegate conformsToProtocol:@protocol(DeviceWifiConfigureConsumerDelegate)]) {
+        [self.delegate wifiConfigure:self continueToStep:self.currentStep];
+    }
 }
 
 - (void)stopConfigure {
-    // 默认实现抛出异常
-    [NSException raise:NSInternalInconsistencyException
-                format:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)];
+    self.currentStep = WifiConfigureStepEnded;
+    self.isDoingJoinNet = NO;
+    if ([self.delegate conformsToProtocol:@protocol(DeviceWifiConfigureConsumerDelegate)]) {
+        [self.delegate wifiConfigure:self continueToStep:self.currentStep];
+    }
+    
+    [self stopQueryOnlineTimer];
+}
 
 #pragma mark - Start & Stop Timer
 - (void)startQueryOnlineTimer {
